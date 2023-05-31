@@ -1,4 +1,4 @@
-package com.kirbi96.noteapp
+package com.kirbi96.noteapp.feature_note.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
