@@ -9,7 +9,7 @@ import java.sql.Timestamp
 data class Note(
     val title: String,
     val content: String,
-    val timestamp: Timestamp,
+    val timestamp: Long,
     val color: Int,
     @PrimaryKey val id: Int? = null
 ) {
@@ -17,3 +17,5 @@ data class Note(
         val noteColors = listOf(RedOrange, LightGreen, Violet, BabyBlue, RedPink )
     }
 }
+
+class InvalidNoteException(message: String): Exception(message)
